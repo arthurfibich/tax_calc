@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Route, Redirect, Switch, BrowserRouter} from 'react-router-dom';
 import App from './App';
+import CalculatorPage from './components/layout/CalculatorPage';
+import Main from './components/layout/Main';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route 
+        exact 
+        path='/' 
+        component={Main}
+      />
+      <Route 
+        exact 
+        path='/calc' 
+        component={CalculatorPage}
+      />
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
