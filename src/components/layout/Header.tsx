@@ -4,7 +4,10 @@ import "../../styles/header.css"
 export const Header = () => {
   return (
     <div className="Header">
-      hi, ich bin's..., der Header!
+      <button id = "LogIn">Anmelden</button>
+      <button id = "Regs">Registrieren</button>
+
+      
     </div>
   );
 }

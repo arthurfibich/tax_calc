@@ -1,0 +1,45 @@
+.DownArrow {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: var(--titleheight);
+    left: 50%;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+    border-radius: 125px;
+    border-style: solid;
+    transition: transform 0.3s;
+    transform-origin: center center;
+    user-select: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.DownArrow > img {
+    transform: translate(-50%, -50%) rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40%;
+    width: 40%;
+    transition: transform 0.3s;
+}
+
+.DownArrow:hover > img{
+    transform: translate(-50%, -50%) rotate(90deg) scale(1.1);
+}
+
+.DownArrow:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.DownArrow:active{
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.DownArrow:active > img{
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.9);
+}

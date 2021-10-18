@@ -1,0 +1,28 @@
+.Content{
+    position: absolute;
+    top: var(--titleheight);
+    box-sizing: border-box;
+    padding-top: 10vh;
+    width: 100%;
+    min-height: 10%;
+    background: var(--companycolor);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    left: 0px;
+}
+
+.flexchild {
+    position: relative;
+    flex: 0 1 auto;
+    width: 345px;
+    height: 653px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ), var(--darkcompanycolor);
+    margin: 50px;
+}
