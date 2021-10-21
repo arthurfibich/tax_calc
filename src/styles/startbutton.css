@@ -1,0 +1,49 @@
+.StartButton{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 800px) {
+    .StartButton{
+        top: calc(35% + var(--titletextheight));
+        width: min(var(--titletextwidth), 100%);
+        height: calc(var(--titletextheight) / 2);
+        line-height: calc(var(--titletextheight) / 2);
+    }
+    .StartButton > button{
+        transform: scale(1.5);
+        transition: transform 0.4s;
+    }
+    
+    .StartButton > button:hover{
+        transform: scale(1.7);
+    }
+    
+    .StartButton > button:active{
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 799.999px) {
+    .StartButton{
+        top: calc(35% + var(--titletextheightsmall));
+        width: min(var(--titletextwidthsmall), 100%);
+        height: calc(var(--titletextheightsmall) / 2);
+        line-height: calc(var(--titletextheightsmall) / 2);
+    }
+    .StartButton > button{
+        transform: scale(1.3);
+        transition: transform 0.4s;
+    }
+    
+    .StartButton > button:hover{
+        transform: scale(1.5);
+    }
+    
+    .StartButton > button:active{
+        transform: scale(1.3);
+    }
+}
