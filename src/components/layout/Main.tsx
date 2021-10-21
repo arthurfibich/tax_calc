@@ -6,6 +6,7 @@ import Header from './Header';
 import TitlePageBackground from './TitlePageBackground';
 import Title from './Title';
 import Content from './Content';
+import StartButton from './StartButton';
 
 export const Main = () => {
   return (
@@ -13,6 +14,7 @@ export const Main = () => {
       <TitlePageBackground />
       <Header />
       <Title />
+      <StartButton />
       <DownArrow />
       <Content />
     </div>

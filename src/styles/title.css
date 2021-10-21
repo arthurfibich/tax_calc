@@ -1,12 +1,13 @@
 .Title{
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 45%;
+    top: 35%;
     left: 50%;
     font-size: 40px;
     font-family: var(--companyfont);
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
 .MainTitle{
@@ -28,8 +29,8 @@
 
 @media only screen and (min-width: 800px) {
     .Title{
-        width: 800px;
-        height: 260px;
+        width: min(var(--titletextwidth), 100%);
+        height: var(--titletextheight);
     }
     .MainTitle{
         font-size: 80px;
@@ -41,8 +42,8 @@
 
 @media only screen and (min-width: 0px) and (max-width: 799.999px) {
     .Title{
-        width: 600px;
-        height: 200px;
+        width: min(var(--titletextwidthsmall), 100%);
+        height: var(--titletextheightsmall);
     }
     .MainTitle{
         font-size: 60px;

@@ -1,9 +1,25 @@
+
+/* standard fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/* general variables */
 
 :root {
     --titleheight: 90%;
     --brightcompanycolor: #0084d1;
     --companycolor: #0074b8;
     --darkcompanycolor: #0066a1;
+    --darkercompanycolor: #004a75;
     --companyfont: 'Montserrat', sans-serif;
+}
+
+/* titeltext data */
+
+:root{
+    --titletextheight: 260px;
+    --titletextheightsmall: 200px;
+    --titletextwidth: 800px;
+    --titletextwidthsmall: 600px;
 }
