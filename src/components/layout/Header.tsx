@@ -1,15 +1,11 @@
-import React from 'react';
-import "../../styles/header.css"
+import '@styles/header.css';
+import type { FC } from 'react';
 
-export const Header = () => {
+export const Header: FC = () => {
   return (
     <div className="Header">
-      <button id = "LogIn">Anmelden</button>
-      <button id = "Regs">Registrieren</button>
-
-      
+      <button id="LogIn">Anmelden</button>
+      <button id="Regs">Registrieren</button>
     </div>
   );
-}
-
-export default Header;
+};

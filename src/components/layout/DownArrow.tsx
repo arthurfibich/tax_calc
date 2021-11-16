@@ -1,21 +1,19 @@
-import React from 'react';
-import "../../styles/downArrow.css"
-import arrow from '../../images/right-arrow.svg'
+import type { FC } from 'react';
+import '@styles/downArrow.css';
+import arrow from '@images/right-arrow.svg';
 
-export const DownArrow = () => {
+export const DownArrow: FC = () => {
   return (
-    <div className="DownArrow" onClick = {scroll}>
-      <img src={arrow} alt={"logo"}/>
+    <div role="button" className="DownArrow" onClick={scroll} onKeyDown={scroll} tabIndex={0}>
+      <img src={arrow} alt={'logo'} />
     </div>
   );
-}
+};
 
-export default DownArrow;
-
-function scroll(){
+function scroll() {
   window.scrollTo({
     top: window.innerHeight,
     left: 0,
-    behavior: 'smooth'
+    behavior: 'smooth',
   });
 }

@@ -1,12 +1,10 @@
-import React from 'react';
-import "../../styles/startbutton.css"
+import type { FC } from 'react';
+import '@styles/startbutton.css';
 
-export const StartButton = () => {
+export const StartButton: FC = () => {
   return (
-    <div className = "StartButton">
-        <button>Los Gehts!</button>
+    <div className="StartButton">
+      <button>Los Gehts!</button>
     </div>
   );
-}
-
-export default StartButton;
+};
