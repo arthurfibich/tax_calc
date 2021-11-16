@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import '../../styles/title.css';
+import '@styles/title.css';
 
 export const Title: FC = () => {
   return (

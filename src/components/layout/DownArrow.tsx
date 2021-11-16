@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import '../../styles/downArrow.css';
-import arrow from '../../images/right-arrow.svg';
+import '@styles/downArrow.css';
+import arrow from '@images/right-arrow.svg';
 
 export const DownArrow: FC = () => {
   return (

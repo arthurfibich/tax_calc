@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import '../../styles/content.css';
+import '@styles/content.css';
 
 export const Content: FC = () => {
   return (

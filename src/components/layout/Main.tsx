@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import '../../styles/variables.css';
-import '../../styles/standard.css';
+import '@styles/variables.css';
+import '@styles/standard.css';
 import { DownArrow } from './DownArrow';
 import { Header } from './Header';
 import { TitlePageBackground } from './TitlePageBackground';
