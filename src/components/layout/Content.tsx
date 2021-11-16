@@ -1,16 +1,14 @@
-import React from 'react';
-import "../../styles/content.css"
+import type { FC } from 'react';
+import '@styles/content.css';
 
-export const Content = () => {
+export const Content: FC = () => {
   return (
-    <div className = "Content">
-        <div className = "flexchild"></div>
-        <div className = "flexchild"></div>
-        <div className = "flexchild"></div>
-        <div className = "flexchild"></div>
-        <div className = "flexchild"></div>
+    <div className="Content">
+      <div className="flexchild"></div>
+      <div className="flexchild"></div>
+      <div className="flexchild"></div>
+      <div className="flexchild"></div>
+      <div className="flexchild"></div>
     </div>
   );
-}
-
-export default Content;
+};
