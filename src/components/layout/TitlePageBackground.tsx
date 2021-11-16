@@ -1,11 +1,6 @@
-import React from 'react';
-import "../../styles/titlepagebackground.css"
+import type { FC } from 'react';
+import '@styles/titlepagebackground.css';
 
-export const TitlePageBackground = () => {
-  return (
-    <div className = "TitlePageBackground">
-    </div>
-  );
-}
-
-export default TitlePageBackground;
+export const TitlePageBackground: FC = () => {
+  return <div className="TitlePageBackground"></div>;
+};
